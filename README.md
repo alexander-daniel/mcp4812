@@ -21,15 +21,14 @@ add it to your package.json directly with this repository link.
 
 ```
   "dependencies": {
-    "mcp3008": "https://github.com/alexander-daniel/mcp4812.git"
+    "mcp4812": "https://github.com/alexander-daniel/mcp4812.git"
   }
 ```
 
 or with `npm`
 
 ```bash
-npm install https://github.com/alexander-daniel/mcp3008
-```
+npm install https://github.com/alexander-daniel/mcp4812
 
 ## Wiring
 TODO

@@ -18,11 +18,11 @@ const mcp4812 = new MCP4812(spi, CLOCK_SELECT_PIN);
 function loop() {
 
   // this read function will automatically set the state of the provided
-  // chip select pin so it can communicate to the mcp3008 peripheral.
-  // all you have to provide is the channel you wish to read (0-7)
+  // chip select pin so it can communicate to the mcp4812 peripheral.
+  // all you have to provide is the channel you wish to write to (0-1)
   const value = 255;
   mcp4812.setVoltage(0, value);
-  mcp4812.setVoltage(0, value * 2);
+  mcp4812.setVoltage(1, value * 2);
   console.log(value, value * 2);
   setTimeout(loop, 10);
 }
